@@ -1,7 +1,7 @@
 """
 Script to prepare different macroeconomic time series 
 
-@author: dkoehn
+@author: koehnden
 """
 
 import numpy as np

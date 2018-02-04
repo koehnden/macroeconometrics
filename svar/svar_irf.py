@@ -1,9 +1,8 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
-Created on Sat Feb  3 13:31:48 2018
+functions to compute structural impulse responses give VAR(p) parameter
+estimates
 
-@author: root
+@author: koehnden
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -68,6 +67,3 @@ def get_companion_matrix(coefs, k, p):
         result[np.arange(k, kp), np.arange(kp-k)] = 1
 
     return result
-
-Theta = get_struct_ir(A,B_0,last_horizon=8)
-plot_struc_irf(df,Theta,shock_in="fd_log_m2",horizon=8)
